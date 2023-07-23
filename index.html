@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body class="text-gray-600 font-body">
+    <!--<h1 class="text-3xl text-red-500 w-full text-center  m-auto font-bold ">Hello</h1> -->
+    <div class="grid md:grid-cols-3">
+<div class="md:col-span-1 md:flex md:justify-end">
+<nav class="text-right">
+<div class="flex justify-between items-center">
+<h1 class="font-bold uppercase p-4 text-mammoth">
+    <a href="/" class="text-green-500 sm:text-red-500 lg:text-blue-500 hover:bg-gray-400 ">Food Ninja</a>
+    </h1>
+  <div class="px-4 cursor-pointer md:hidden" id="burger">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      
+  </div> 
+</div>
+<ul class="mt-6 hidden md:block" id="menu">
+    <li class="text-gray-900 font-bold py-1">
+        <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
+           <span>Home</span> 
+           <svg class="w-5 ml-2"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+            <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+          </svg>
+          
+           </a>
+        </li>
+        <li class="py-1">
+            <a href="#" class="px-4 flex justify-end border-r-4  border-gray-500">
+               <span>About</span>
+               <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+              </svg>
+              
+               </a>
+            </li>
+            <li class="py-1">
+                <a href="#" class="px-4 flex justify-end  border-r-4  border-gray-500">
+                   <span>Contact</span> 
+                   <svg class="w-5 ml-2"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                  </svg>
+                  
+                   </a>
+                </li>
+           </ul>
+           </nav> 
+</div>
+<main class="px-16 py-6 bg-gray-200 md:col-span-2">
+  <div class="flex md:justify-end">
+<a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500 shadow-xl">Log in</a>
+<a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500 shadow-xl">Sign Up</a>
+ </div>
+ 
+ <header>
+  <h2 class="text-gray-900 text-6xl font-semiblod">Recipes</h2>
+  <h3 class="text-3xl">For Ninjas</h3>
+ </header>
+  <h4 class="font-semibold mt-12 pb-2 border-b border-red-200">Latest Recipes</h4>
+  <div class="mt-8 grid lg:grid-cols-3 gap-10">
+    <div class="card hover:shadow-lg ">
+       <img src="ChoclateCake.jpg" alt="" class="object-fill w-full h-64">
+<div class="mt-8">
+    <span class="font-bold">ChoclateCake</span>
+    <span class="block">Recipe by Sakshi</span>
+</div>
+     <div class="badge">
+        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd" />
+          </svg>
+          
+            <span>25mins</span>
+        </div>
+      
+    </div>
+    <div class="card hover:shadow-lg">
+       <img src="coldcoffe.jpg" alt="" class="object-fill w-full h-64">
+<div class="mt-8">
+    <span class="font-bold">ColdCoffe</span>
+    <span class="block">Recipe by Sakshi</span>
+</div>
+      
+        <div class="badge">
+            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd" />
+              </svg>
+              
+            <span>25mins</span>
+        </div>
+      
+    </div>
+    <div class="card hover:shadow-lg">
+        <img src="gulabjamun.jpg" alt="" class="object-fill w-full h-64">
+<div class="mt-8">
+    <span class="font-bold">GulabJamun</span>
+    <span class="block">Recipe by Sakshi</span>
+</div>
+     
+        <div class="badge">
+            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd" />
+              </svg>
+              
+            <span>25mins</span>
+        </div>
+      
+    </div>
+</div>
+<h4 class="font-bold mt-12 pb-2 border-b border-red-200">Most Popular</h4>
+<div class="flex justify-center">
+    <div class="btn mt-4 bg-secondary-100 text-green-500 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300 shadow-xl">Load More</div>
+</div>
+</main>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
